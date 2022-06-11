@@ -1,0 +1,33 @@
+{
+  "name": "@v131v/eslint-config",
+  "version": "1.0.0",
+  "description": "Just my eslint configs",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v131v/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "v131v",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/v131v/eslint-config/issues"
+  },
+  "homepage": "https://github.com/v131v/eslint-config#readme",
+  "peerDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "jest": "^28.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.17.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "jest": "^28.1.1"
+  }
+}
