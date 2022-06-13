@@ -9,5 +9,7 @@ module.exports = {
     '@typescript-eslint/no-shadow': ['error'],
     'lines-between-class-members': 'off',
     '@typescript-eslint/lines-between-class-members': ['error'],
+    'no-useless-constructor': 'off',
+    '@typescript-eslint/no-useless-constructor': ['error'],
   },
 };
