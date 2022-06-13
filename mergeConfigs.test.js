@@ -1,4 +1,4 @@
-const mergeConfigs = require('./mergeConfigs.js');
+const mergeConfigs = require('./mergeConfigs');
 
 describe('mergeConfigs tests', () => {
 
