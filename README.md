@@ -1,13 +1,13 @@
 # eslint-config
 
-My eslint configs with typescript, react and airbnb-config
+My eslint configs with typescript, react, jest and airbnb-config
 
 ## Usage
 
 1. Install package
 
   ```sh
-  npm i https://github.com/v131v/eslint-config.git
+  npm i --save-dev https://github.com/v131v/eslint-config.git
   ```
 
 2. Install peer dependencies
