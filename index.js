@@ -1,12 +1,22 @@
-const mergeConfigs = require('./mergeConfigs');
-
-const base = require('./configs/base');
-const jest = require('./configs/jest');
-const react = require('./configs/react');
-const typescript = require('./configs/typescript');
-const rules = require('./configs/rules');
-
-const configs = [base, jest, react, typescript, rules];
-const config = mergeConfigs(configs);
-
-module.exports = config;
+module.exports = {
+  env: {
+    es2021: true,
+    node: true,
+  },
+  extends: ['eslint:recommended', 'airbnb-base'],
+  parserOptions: {
+    ecmaVersion: 13,
+    sourceType: 'module',
+  },
+  rules: {
+    'lines-between-class-members': [
+      'error',
+      'always',
+      { exceptAfterSingleLine: true },
+    ],
+    'no-await-in-loop': 'off',
+    'no-plusplus': 'off',
+    'padded-blocks': ['error', 'always'],
+    radix: ['error', 'as-needed'],
+  },
+};
