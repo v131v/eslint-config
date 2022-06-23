@@ -4,6 +4,7 @@
   "description": "Just my eslint configs",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint ./ --fix",
     "test": "jest"
   },
   "repository": {
