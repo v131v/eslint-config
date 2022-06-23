@@ -10,28 +10,35 @@ My eslint configs with typescript, react, jest and airbnb-config
   npm i --save-dev https://github.com/v131v/eslint-config.git
   ```
 
-2. Install peer dependencies
-
-  If using npm 5+:
+2. Install peer dependencies that you need
 
   ```sh
-  npx install-peerdeps --dev 
+    npx install-eslint-deps
   ```
 
-  ### OR
-
-  If using npm < 5, this show peer dependencies:
-
-  ```sh
-  npm info https://github.com/v131v/eslint-config.git peerDependencies
-  ```
-
-  Then install them manually by `npm i --save-dev`
+  Options:
+  * `--no-save` - not install, only write package.json and package-lock.json files
+  * `--ts` - install typescript packages (eslint plugin, parser)
+  * `--react` - install react packages (eslint airbnb config, plugins)
+  * `--jest` - install jest packages (eslint plugin)
 
 3. Add config to your `.eslintrc.json`
 
   ```json
   {
     "extends": ["@v131v"]
+  }
+  ```
+
+  You can add configs what you need (base config must be the first):
+
+  ```json
+  {
+    "extends": [
+      "@v131v",
+      "@v131v/eslint-config/jest"
+      "@v131v/eslint-config/react",
+      "@v131v/eslint-config/typescript"
+    ]
   }
   ```

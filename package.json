@@ -10,7 +10,7 @@
     ".": "./index.js",
     "./jest": "./jest.js",
     "./react": "./react.js",
-    "./ts": "./typescript.js"
+    "./typescript": "./typescript.js"
   },
   "scripts": {
     "lint": "eslint ./ --fix",
