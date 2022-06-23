@@ -1,11 +1,17 @@
 {
   "name": "@v131v/eslint-config",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Just my eslint configs",
   "bin": {
     "install-eslint-deps": "./bin/depsInstaller.js"
   },
   "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./jest": "./jest.js",
+    "./react": "./react.js",
+    "./ts": "./typescript.js"
+  },
   "scripts": {
     "lint": "eslint ./ --fix",
     "test": "jest"
